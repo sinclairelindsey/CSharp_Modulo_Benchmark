@@ -15,18 +15,17 @@
 <pre><code>
 BenchmarkDotNet=v0.11.0, OS=Windows 10.0.17134.167 (1803/April2018Update/Redstone4)
 Intel Xeon CPU E5-2620 v4 2.10GHz, 1 CPU, 16 logical and 8 physical cores
-.NET Core SDK=2.1.302
-  [Host]     : .NET Core 2.1.2 (CoreCLR 4.6.26628.05, CoreFX 4.6.26629.01), 64bit RyuJIT
-  DefaultJob : .NET Core 2.1.2 (CoreCLR 4.6.26628.05, CoreFX 4.6.26629.01), 64bit RyuJIT
+  [Host]     : .NET Framework 4.7.2 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3131.0
+  DefaultJob : .NET Framework 4.7.2 (CLR 4.0.30319.42000), 64bit RyuJIT-v4.7.3131.0
 </code></pre>
 <pre><code></code></pre>
 
 <table>
-<thead><tr><th>Method</th><th>Length</th><th>Iterations</th><th>  Mean</th><th>Error</th><th>StdDev</th><th>Median</th>
+<thead><tr><th>Method</th><th>Length</th><th>Iterations</th><th>  Mean</th><th>  Error</th><th>StdDev</th><th>Median</th>
 </tr>
-</thead><tbody><tr><td>Modulo</td><td>36</td><td>10000</td><td>35,107.51 ns</td><td>695.4388 ns</td><td>2,006.500 ns</td><td>34,369.76 ns</td>
-</tr><tr><td>Bruteforce</td><td>36</td><td>10000</td><td>5,896.25 ns</td><td>67.9892 ns</td><td>56.774 ns</td><td>5,880.45 ns</td>
-</tr><tr><td>Enumerable</td><td>36</td><td>10000</td><td>31.38 ns</td><td>0.7299 ns</td><td>2.152 ns</td><td>30.52 ns</td>
+</thead><tbody><tr><td>Modulo</td><td>36</td><td>10000</td><td>33,981.07 ns</td><td>1,650.1616 ns</td><td>1,694.594 ns</td><td>33,245.19 ns</td>
+</tr><tr><td>Bruteforce</td><td>36</td><td>10000</td><td>5,996.10 ns</td><td>123.9321 ns</td><td>226.617 ns</td><td>5,884.37 ns</td>
+</tr><tr><td>Enumerable</td><td>36</td><td>10000</td><td>34.27 ns</td><td>0.9983 ns</td><td>1.554 ns</td><td>33.67 ns</td>
 </tr></tbody></table>
 </body>
 </html>
